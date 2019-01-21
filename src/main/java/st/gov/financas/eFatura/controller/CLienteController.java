@@ -18,7 +18,7 @@ public class CLienteController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/clientesController")
     public String buscar() {
-        return "Meu Primeiro teste de spring boot";
+        return "Meu Primeiro teste de spring boot dia 21/01/2019";
 
     }
 
