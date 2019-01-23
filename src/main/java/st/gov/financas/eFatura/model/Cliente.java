@@ -5,12 +5,18 @@
  */
 package st.gov.financas.eFatura.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  *
  * @author Impostos
  */
+@Entity
 public class Cliente {
-    
+    @Id
+    @GeneratedValue
     private Integer id;
     private String nome;
 
