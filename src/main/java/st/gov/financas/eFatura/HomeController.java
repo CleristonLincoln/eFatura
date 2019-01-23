@@ -17,7 +17,7 @@ public class HomeController {
     
     @RequestMapping ("/")
     public String home(){
-        return "Welcome to Spring Boot hoje";
+        return "Welcome to Spring Boot";
     }
     
 }
