@@ -1,0 +1,31 @@
+<html>
+	<head>
+
+	</head>
+
+	<body>
+	<div id="saida">
+
+	</div>
+	</body>
+	<script>
+		var pessoa = {nome:"Chris",idade:35, dizerAlgo:function (mensagem, saida){
+			saida(mensagem);
+			}
+		};
+		console.log(pessoa.nome);
+		console.log(pessoa.idade);
+	
+
+		pessoa.dizerAlgo("Olá do Paramentro por div", function(msg){
+			var divSaida = document.getElementById("saida");
+			divSaida.innerHTML = msg;
+
+		});//div
+
+		pessoa.dizerAlgo("Olá do Paramentro CallBack", function(msg){ window.alert(msg)});//alert
+
+		//pessoa.dizerAlgo("Olá do Paramentro");//console
+		</script>
+
+</html>

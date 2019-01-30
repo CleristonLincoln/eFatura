@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package st.gov.financas.eFatura;
+package st.gov.financas.eFatura.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
  * @author barro
  */
-@RestController
+@Controller
 public class HomeController {
     
-    @RequestMapping ("/")
+    @RequestMapping ("/home")
     public String home(){
-        return "Welcome to Spring Boot";
+        return "index";
     }
     
 }
